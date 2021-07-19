@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap');
+
+:root{
+    --dark:#2b2d42;
+    --light:#adb5bd;
+    --border:#dee2e6;
+    --border-btn:#edf2f4;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.Container{
+    max-width: 1024px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.text-center{
+    text-align: center;
+}
+.border-shadow{
+    border: 1px solid var(--border-btn);
+    box-shadow: 1px 3px 10px #e9ecef;
+}
+.text-dark{
+    color: var(--dark);
+}
+.inline{
+    display: inline-block;
+}
+.Text-light{
+    color: var(--light);
+}
+.text-gradient{
+    background: linear-gradient(to right,#8e2de2,#4a00e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+#main .Container .box-nav>a{
+    font-size: 1em;
+    padding: .5em 1em;
+}
+#main .Container form{
+    margin: 2em 0;
+}
+
+table{
+    border-spacing:0 ;
+    width: 100%;
+}
+.table td,.table th{
+    padding: .75em;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+
+.table td>a .btn{
+    padding: .3em 1em;
+    font-size: 1.1em;
+    margin: 0 .2em;
+}
+
+.table tr:hover{
+    background-color: #495af1ce;
+}
+.table tr:hover td > a{
+    box-shadow: none;
+}
+.table .thead-dark th{
+    color: #fff;
+    background-color: var(--dark);
+    border-radius: #32383e;
+}
+
+/* send money form */
+.form-title{
+    margin-top: 2em;
+}
+.form-title>h2{
+    padding: .5em 0;
+}
+.new_transaction{
+    max-width: 786px;
+    margin: auto;
+}
+
+#update_transactions .form-group,
+#add_transaction .form-froup{
+    margin: .4em 0;
+}
+
+#update_transactions .form-group input[type='text'],
+#add_transactions .form-group input[type='text']{
+    width: 100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    bottom: 1px solid var(--border);
+    font-family: 'Barlow',sans-serif;
+    font-size: 1em;
+    border-radius: .2em;
+}
+
+#update_transactions .form-group .btn,
+#add_transactions .form-group .btn{
+    width: 100%;
+    padding: .9em 1em;
+    background-color: #0d6efd;
+    border: none;
+    font-family: 'PT Sans',sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: .2em;
+    margin: .5em 0;
+}
+
+#update_transactions .form-group .btn:hover,
+#add_transactions .form-group .btn:hover{
+    color: #dee2e6;
+    background-color: var(--dark);
+    
+}

@@ -1,0 +1,21 @@
+<!--Form Handling-->
+   <form action="/views/transaction.ejs" method="POST"> 
+    <table class="table">
+        <thead class="thead-dark">
+            <tr><th>From</th>
+                <th>To</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(var i=0;i< transaction.length;i++){ %>
+                <tr>
+                    <td><%= transaction[i].from %></td>
+                    <td><%= transaction[i].to %></td>
+                    <td>$ <%= transaction[i].Amount %></td>
+                </tr>
+            <% }%>
+        </tbody>
+    </table>
+    </form>
+</main>
